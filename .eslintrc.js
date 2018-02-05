@@ -1,15 +1,14 @@
 module.exports = {
-  extends: 'xo-space/esnext',
+  extends: [
+    'xo-space/esnext',
+    'plugin:unicorn/recommended',
+  ],
   plugins: [
     'no-use-extend-native',
     'unicorn',
     'promise',
     'import',
     'node'
-  ],
-  extends: [
-    'plugin:unicorn/recommended',
-    'plugin:promise/recommended'
   ],
   rules: {
     'object-curly-spacing': ['error', 'always'],
@@ -48,23 +47,18 @@ module.exports = {
     'prefer-spread': 'error',
     'rest-spread-spacing': 'error',
     'yield-star-spacing': ['error', 'after'],
-    'indent': ['error', 2, {
-      SwitchCase: 1
-    }],
     'object-shorthand': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-const': ['error', {
       destructuring: 'all'
     }],
     'prefer-numeric-literals': 'error',
-    'prefer-destructuring': ['error', {
-      array: true,
-      object: true
-    }, {
-      enforceForRenamedProperties: true
-    }],
     'consistent-return': 'error',
 
+    "promise/always-return": "error",
+    "promise/no-return-wrap": "error",
+    "promise/param-names": "error",
+    "promise/catch-or-return": "error",
     'promise/no-return-in-finally': 'error',
     'promise/prefer-await-to-then': 'error',
 
@@ -86,12 +80,10 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
     'import/no-duplicates': 'error',
-    "import/no-extraneous-dependencies": ["error", {'devDependencies': ['test/**/*.js']}],
+    'import/no-extraneous-dependencies': ["error", {'devDependencies': ['test/**/*.js']}],
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default-member': 'error',
     'import/no-named-as-default': 'error',
-    // Включить после рефакторинга.
-    // 'import/no-unresolved': ['error', {commonjs: true}],
     'import/order': 'error',
     'import/prefer-default-export': 'error',
   }
