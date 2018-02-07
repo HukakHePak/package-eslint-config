@@ -2,16 +2,21 @@ module.exports = {
   extends: [
     'xo-space/esnext',
     'plugin:unicorn/recommended',
+    'prettier'
   ],
   plugins: [
     'no-use-extend-native',
     'unicorn',
     'promise',
     'import',
-    'node'
+    'node',
+    'prettier'
   ],
   rules: {
-    'object-curly-spacing': ['error', 'always'],
+    'prettier/prettier': ['error', {
+      singleQuote: true,
+      trailingComma: 'es5'
+    }],
     'valid-jsdoc': ['error', {
       requireParamDescription: false,
       requireReturnDescription: false,
@@ -19,20 +24,12 @@ module.exports = {
     }],
     'no-invalid-this': 'error',
     'no-unused-vars': 'error',
-    'comma-dangle': ['error', 'always-multiline'],
     'linebreak-style': 'error',
-    'max-len': [2, {
-      code: 120,
-      tabWidth: 2,
-      ignoreUrls: true,
-    }],
     'max-lines': ['warn', {
       'max': 500,
       'skipBlankLines': true,
       'skipComments': true
     }],
-    'no-tabs': 'error',
-    'quote-props': ['error', 'consistent'],
     'require-jsdoc': ['error', {
       require: {
         FunctionDeclaration: true,
@@ -40,13 +37,9 @@ module.exports = {
         ClassDeclaration: true,
       },
     }],
-    'arrow-parens': ['error', 'always'],
-    'generator-star-spacing': ['error', 'after'],
     'no-var': 'error',
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
-    'rest-spread-spacing': 'error',
-    'yield-star-spacing': ['error', 'after'],
     'object-shorthand': ['error', 'always'],
     'prefer-arrow-callback': 'error',
     'prefer-const': ['error', {
@@ -54,6 +47,7 @@ module.exports = {
     }],
     'prefer-numeric-literals': 'error',
     'consistent-return': 'error',
+    'camelcase': ['error', { properties: 'never' }],
 
     "promise/always-return": "error",
     "promise/no-return-wrap": "error",
