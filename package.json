@@ -1,13 +1,15 @@
 {
-  "name": "eslint-config-como-capital",
-  "private": true,
+  "name": "@comocapital/eslint-config",
   "version": "0.0.0",
-  "description": "ESLint shareable config for Como Capital",
+  "description": "Como Capital's ESLint config",
   "main": "index.js",
-  "repository": "COMO-CAPITAL/eslint-config-como-capital",
-  "author": "Como Capital",
+  "repository": "COMO-CAPITAL/eslint-config",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^4",
+    "prettier": "1.10.2"
+  },
   "devDependencies": {
-    "eslint": "^4.17.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-xo-space": "^0.17.0",
     "eslint-plugin-import": "^2.8.0",
@@ -15,7 +17,6 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-unicorn": "^3.0.1",
-    "prettier": "1.10.2"
+    "eslint-plugin-unicorn": "^3.0.1"
   }
 }

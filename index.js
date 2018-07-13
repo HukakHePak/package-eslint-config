@@ -74,7 +74,6 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-amd': 'error',
     'import/no-duplicates': 'error',
-    'import/no-extraneous-dependencies': ["error", {'devDependencies': ['test/**/*.js']}],
     'import/no-mutable-exports': 'error',
     'import/no-named-as-default-member': 'error',
     'import/no-named-as-default': 'error',
