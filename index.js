@@ -14,6 +14,7 @@ module.exports = {
   rules: {
     'prettier/prettier': ['error', {
       singleQuote: true,
+      trailingComma: 'es5'
     }],
     'valid-jsdoc': ['error', {
       requireParamDescription: false,
