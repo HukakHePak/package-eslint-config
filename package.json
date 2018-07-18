@@ -1,6 +1,6 @@
 {
   "name": "@comocapital/eslint-config",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "description": "Como Capital's ESLint config",
   "main": "index.js",
   "repository": "como-capital/eslint-config",
