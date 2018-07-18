@@ -3,7 +3,7 @@
   "version": "1.0.0-1",
   "description": "Como Capital's ESLint config",
   "main": "index.js",
-  "repository": "como-capital/eslint-config",
+  "repository": "como-capital/package-eslint-config",
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^4",
