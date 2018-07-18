@@ -27,6 +27,8 @@ module.exports = {
         ClassDeclaration: true,
       },
     }],
+    // allow use of functions before they are defined
+    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
 
     'promise/catch-or-return': 'error',
     'promise/no-new-statics': 'error',
