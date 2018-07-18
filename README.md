@@ -1,13 +1,15 @@
 # @comocapital/eslint-config
-Наш внутренний eslint конфиг. За основу взят конфиг eslint-config-xo и eslint-config-google. Также добавлены используемые в XO плагины.
+This package provides Como Capital's .eslintrc (without React plugins) as an extensible shared config.
 
 ### Usage
 
+1.
 ```js
-npm i -D @comocapital/eslint-config eslint@4 prettier@1.10.2
+npm i -D @comocapital/eslint-config eslint@4 prettier@1
 ```
 
-И добавить в `package.json` следующее:
+2. Add `"extends":"@comocapital"` to your .eslintrc
+
 ```json
 {
   "eslintConfig": {

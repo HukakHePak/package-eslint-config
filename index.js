@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'xo-space/esnext',
+    'airbnb-base',
     'plugin:unicorn/recommended',
     'prettier'
   ],
@@ -8,27 +8,17 @@ module.exports = {
     'no-use-extend-native',
     'unicorn',
     'promise',
-    'import',
     'node',
     'prettier'
   ],
   rules: {
     'prettier/prettier': ['error', {
       singleQuote: true,
-      trailingComma: 'es5'
     }],
     'valid-jsdoc': ['error', {
       requireParamDescription: false,
       requireReturnDescription: false,
       requireReturn: false,
-    }],
-    'no-invalid-this': 'error',
-    'no-unused-vars': 'error',
-    'linebreak-style': 'error',
-    'max-lines': ['warn', {
-      'max': 500,
-      'skipBlankLines': true,
-      'skipComments': true
     }],
     'require-jsdoc': ['error', {
       require: {
@@ -37,47 +27,19 @@ module.exports = {
         ClassDeclaration: true,
       },
     }],
-    'no-var': 'error',
-    'prefer-rest-params': 'error',
-    'prefer-spread': 'error',
-    'object-shorthand': ['error', 'always'],
-    'prefer-arrow-callback': 'error',
-    'prefer-const': ['error', {
-      destructuring: 'all'
-    }],
-    'prefer-numeric-literals': 'error',
-    'consistent-return': 'error',
-    'camelcase': ['error', { properties: 'never' }],
 
-    "promise/always-return": "error",
-    "promise/no-return-wrap": "error",
-    "promise/param-names": "error",
-    "promise/catch-or-return": "error",
+    'promise/catch-or-return': 'error',
+    'promise/no-new-statics': 'error',
     'promise/no-return-in-finally': 'error',
+    'promise/no-return-wrap': ['error', {allowReject: true}],
+    'promise/param-names': 'error',
     'promise/prefer-await-to-then': 'error',
+    'promise/valid-params': 'error',
 
-    'node/process-exit-as-throw': 'error',
-    'node/no-deprecated-api': 'error',
     'node/exports-style': ['error', 'module.exports'],
-    'node/no-unpublished-require': 'error',
+    'node/no-deprecated-api': 'error',
+    'node/process-exit-as-throw': 'error',
 
     'import/default': 'error',
-    'import/export': 'error',
-    'import/extensions': ['error', {
-      js: 'never',
-      json: 'never',
-      jsx: 'never'
-    }],
-    'import/first': 'error',
-    'import/named': 'error',
-    'import/no-absolute-path': 'error',
-    'import/newline-after-import': 'error',
-    'import/no-amd': 'error',
-    'import/no-duplicates': 'error',
-    'import/no-mutable-exports': 'error',
-    'import/no-named-as-default-member': 'error',
-    'import/no-named-as-default': 'error',
-    'import/order': 'error',
-    'import/prefer-default-export': 'error',
   }
 }

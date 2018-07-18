@@ -3,20 +3,20 @@
   "version": "0.0.0",
   "description": "Como Capital's ESLint config",
   "main": "index.js",
-  "repository": "COMO-CAPITAL/eslint-config",
+  "repository": "como-capital/eslint-config",
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^4",
-    "prettier": "1.10.2"
+    "prettier": "^1"
   },
   "devDependencies": {
+    "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-config-xo-space": "^0.17.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-no-use-extend-native": "^0.3.12",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-unicorn": "^3.0.1"
   }
 }
