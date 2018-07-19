@@ -1,5 +1,3 @@
-const styleRules = require('eslint-config-airbnb-base/rules/style').rules;
-
 module.exports = {
   extends: [
     'airbnb-base',
@@ -33,20 +31,6 @@ module.exports = {
     // allow use of functions before they are defined
     // https://eslint.org/docs/rules/no-use-before-define
     'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
-    // allow for-of loops
-    // https://eslint.org/docs/rules/no-restricted-syntax
-    // https://github.com/airbnb/javascript/blob/a12dec90d173464a3fc4e4536b8c6f639fb93236/packages/eslint-config-airbnb-base/rules/style.js#L334
-    'no-restricted-syntax':  styleRules['no-restricted-syntax'].filter((rule) => {
-      if (rule && typeof rule === 'object') {
-        if (rule.selector === 'ForOfStatement') {
-          return false
-        }
-      }
-      return true
-    }),
-    // allow to reassign props
-    // https://eslint.org/docs/rules/no-param-reassign
-    'no-param-reassign': ['error', { 'props': false }],
 
     'promise/catch-or-return': 'error',
     'promise/no-new-statics': 'error',
