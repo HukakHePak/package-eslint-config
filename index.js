@@ -45,5 +45,8 @@ module.exports = {
     'node/process-exit-as-throw': 'error',
 
     'import/default': 'error',
+
+    // Disable formatting rules conflicting with Prettier
+    'unicorn/number-literal-case': 'off'
   }
 }
