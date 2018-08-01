@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
     'airbnb',
-    './rules/base'
-  ].map(require.resolve),
+    './rules/base.js'
+  ],
   rules: {
     // Add support for *.js files in react project
     'react/jsx-filename-extension': ['error', { 'extensions': ['.js', '.jsx'] }],

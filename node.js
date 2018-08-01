@@ -3,8 +3,8 @@ const styleRules = require('eslint-config-airbnb-base/rules/style').rules;
 module.exports = {
   extends: [
     'airbnb-base',
-    './rules/base'
-  ].map(require.resolve),
+    './rules/base.js'
+  ],
   env: {
     node: true,
     es6: true,
