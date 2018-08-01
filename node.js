@@ -1,12 +1,18 @@
 const styleRules = require('eslint-config-airbnb-base/rules/style').rules;
 
 module.exports = {
-  extends: './index.js',
+  extends: [
+    'airbnb-base',
+    './rules/base'
+  ].map(require.resolve),
   env: {
     node: true,
     es6: true,
     commonjs: true
   },
+  plugins: [
+    'node',
+  ],
   parserOptions: {
     // Nodejs used commonjs modules by default.
     sourceType: 'script',
@@ -30,6 +36,10 @@ module.exports = {
     }),
     // Require to use strict mode in nodejs.
     // https://eslint.org/docs/rules/strict
-    'strict': ['error', 'global']
+    'strict': ['error', 'global'],
+
+    'node/exports-style': ['error', 'module.exports'],
+    'node/no-deprecated-api': 'error',
+    'node/process-exit-as-throw': 'error',
   }
 }
