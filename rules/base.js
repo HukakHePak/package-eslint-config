@@ -41,6 +41,7 @@ module.exports = {
     'import/default': 'error',
 
     // Disable formatting rules conflicting with Prettier
-    'unicorn/number-literal-case': 'off'
+    'unicorn/number-literal-case': 'off',
+    "react/jsx-curly-newline": "off",
   }
 }
