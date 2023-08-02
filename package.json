@@ -1,6 +1,6 @@
 {
   "name": "@hukakhepak/eslint-config",
-  "version": "2.0",
+  "version": "2.0.0",
   "description": "Como Capital's ESLint config with actual deps",
   "main": "index.js",
   "repository": {
